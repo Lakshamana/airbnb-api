@@ -11,4 +11,4 @@ tmp
 database/*.sqlite
 
 # docker environments
-# docker/.env*
+docker/.env*
