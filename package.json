@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon server.js",
     "test": "node ace test",
-    "db": "docker run --name postgres --env-file=.env -d postgres"
+    "startdb": "docker-compose -f docker/db.yml up -d",
+    "migrate": "adonis migration:run",
+    "seed": "adonis seed --files database/seeds/DatabaseSeeder.js"
   },
   "keywords": [
     "adonisjs",
