@@ -2,7 +2,7 @@
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
-/** @typedef {import('@adonisjs/framework/src/Auth')} Auth */
+/** @typedef {import('@adonisjs/auth/src/Schemes/Session')} AuthSession */
 
 class SessionController {
   /**
