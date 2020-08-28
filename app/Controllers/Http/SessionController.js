@@ -15,6 +15,7 @@ class SessionController {
   async auth ({request, auth}) {
     const {email, password} = request.all()
     const token = await auth.attempt(email, password)
+    console.log(token, email, password)
     return token
   }
 }
